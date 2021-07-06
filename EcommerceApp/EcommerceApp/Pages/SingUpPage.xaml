@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceApp.Pages.SingUpPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout 
+            BackgroundColor="#00243F">
+
+                <Label Text="SING UP"
+                Style="{StaticResource TitleLabel}"
+                TextColor="#FFFFFF"
+                Margin="0, 25, 0, 0" />
+
+                <Frame 
+                Margin="25"
+                CornerRadius="25">
+                    <StackLayout>
+
+                        <Label Text="Create An Account"
+                        Style="{StaticResource TitleLabel}"
+                        TextColor="#264B77"/>
+
+                        <Entry
+                            Text="{Binding FullName}"
+                            Placeholder="Full Name"
+                            PlaceholderColor="#2F4C58"
+                            Keyboard="Text"/>
+
+                        <Entry
+                            Text="{Binding Email}"
+                            Placeholder="Email"
+                            PlaceholderColor="#2F4C58"
+                            Keyboard="Email"/>
+
+                        <Entry
+                            Text="{Binding Password}"
+                            Placeholder="Password"
+                            PlaceholderColor="#2F4C58"
+                            IsPassword="True"/>
+
+                        <Entry
+                            Text ="{Binding ConfirmationPassword}"
+                            Placeholder="Confirm Password"
+                            PlaceholderColor="#2F4C58"
+                            IsPassword="True"/>
+
+                        <Label
+                        HorizontalTextAlignment="Center"
+                        TextColor="#2F4C58"
+                        Text="Es una forma diferente de hacer las cosas, una diferente de programar. Power by SINCRONIZACION WEB"/>
+                    </StackLayout>
+                </Frame>
+
+
+                <Button 
+                    Command="{Binding ContinueCommand}"
+                    Text="Continue"
+                    Margin="25, 0"
+                    Background="#FFFF"
+                    CornerRadius="5"
+                    TextColor="#264B77"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                />
+
+                <Label
+                Text="Already Have An Account?"
+                TextColor="#FFF"
+                FontSize="Medium"
+                HorizontalTextAlignment="Center"
+                Margin="0,20,0,0"/>
+
+                <Button
+                    Command="{Binding LoginCommand}"
+                    Text="Login"
+                    Margin="25"
+                    Background="#FFFF"
+                    CornerRadius="5"
+                    TextColor="#264B77"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                />
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

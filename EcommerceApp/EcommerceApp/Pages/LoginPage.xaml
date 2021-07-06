@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceApp.Pages.LoginPage"
+             Title="LOGIN">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout 
+            BackgroundColor="#00243F">
+
+                <Label
+                Style="{StaticResource TitleLabel}"
+                TextColor="#FFFFFF"
+                Margin="0, 20, 0, 30" />
+
+                <Frame 
+                Margin="25, 50"
+                CornerRadius="25">
+                    <StackLayout
+                        Margin="0, 50">
+
+                        <Label Text="Sign In"
+                        Style="{StaticResource TitleLabel}"
+                        TextColor="#264B77"/>
+
+                        <Entry
+                            Text="{Binding Email}"
+                            Placeholder="Email"
+                            PlaceholderColor="#2F4C58"
+                            Keyboard="Email"/>
+
+                        <Entry
+                            Text="{Binding Password}"
+                            Placeholder="Password"
+                            PlaceholderColor="#2F4C58"
+                            IsPassword="True"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <Button
+                    Command="{Binding SubmitCommand}"
+                    Text="Login"
+                    Margin="25, 50"
+                    Background="#FFFF"
+                    CornerRadius="5"
+                    TextColor="#264B77"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

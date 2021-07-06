@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcommerceApp.App">
+    <Application.Resources>
+
+        <Color x:Key="StatusBar">#264B77</Color>
+        <Color x:Key="Primary">#264B77</Color>
+        <Color x:Key="PrimaryDark">#2F4C58</Color>
+        <Color x:Key="Accent">#00CCFF</Color>
+        <Color x:Key="TextPrimary">White</Color>
+        <Color x:Key="TextSecondary">#80574D</Color>
+        <Color x:Key="SubtitleText">Black</Color>
+        <Color x:Key="WindowBackground">#00243F</Color>
+
+        <Style TargetType="Label" x:Key="TitleLabel">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+    </Application.Resources>
+</Application>
